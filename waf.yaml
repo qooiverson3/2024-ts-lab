@@ -1,0 +1,15 @@
+kind: WebApplicationFirewall
+metadata:
+  labels:
+    product_suite: testsuite
+spec:
+  - service_name: abcservice
+    backend_ip: 1.1.1.1
+    backend_port: 443
+    block_mode: false
+    fab: f15
+  - service_name: ipservice
+    backend_ip: 10.5.5.5
+    backend_port: 443
+    block_mode: false
+    fab: f14
